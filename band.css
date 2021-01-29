@@ -1,0 +1,54 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('img/banjo.jpg');    /*add a background image in the hero section .jumbotron*/
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+  .jumbotron .container p {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0,0,0,.5);  /*add these styles tok .jumbotron p*/
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;        
+    background:rgba(255, 255, 255, .2); /*add these styles to .jumbotron .container// white background with 20% transparency/opacity*/
+    padding: 2rem;
+    color: #fff;
+}
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+
+  .card > img {
+    max-width: 100%;       /*width or max-width 100% to fit/fill all card's width(parent) and to can scale*/
+    display: block;         /*to avoid some white space around the img*/
+  }
